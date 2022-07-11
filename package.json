@@ -1,0 +1,46 @@
+{
+  "name": "ges-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.9.3",
+    "@emotion/styled": "^11.9.3",
+    "@mui/icons-material": "^5.8.4",
+    "@mui/material": "^5.8.6",
+    "@mui/styled-engine-sc": "^5.8.0",
+    "cra-template": "1.0.3",
+    "json-server": "^0.17.0",
+    "prop-types": "^15.7.2",
+    "ra-data-json-server": "^3.7.1",
+    "ra-data-simple-rest": "^4.2.1",
+    "ra-i18n-polyglot": "^3.7.1",
+    "react": "^16.13.1",
+    "react-admin": "^3.7.1",
+    "react-admin-date-inputs": "^1.1.4",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.3.5"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "server": "json-server --watch db.json --port 6969"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
