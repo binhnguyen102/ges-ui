@@ -1,50 +1,36 @@
 import React from "react";
-import {
-  Edit,
-  SimpleForm,
-  TextInput,
-  NumberInput,
-  RadioButtonGroupInput,
-  required,
-  Show,
-} from "react-admin";
+import { SimpleForm, Show, TextField, NumberField } from "react-admin";
 import { styles } from "../../../styles";
 import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles(styles);
 const RateShow = (props) => {
   const classes = useStyles();
   return (
-    <Show {...props}>
-      <SimpleForm toolbar={false}>
-        <TextInput
-          autoFocus
+    <Show
+      {...props}
+      hasEdit={false}
+      title="resources.gm/admin/rates.titles.show"
+    >
+      <SimpleForm toolbar={false} style={{ marginLeft: 20 }}>
+        <TextField
           source="name"
-          className={classes.two}
-          // validate={required()}
-          disabled
+          className={classes.firstInGroup}
+          style={{ fontSize: "18px" }}
         />
-        <NumberInput
-          autoFocus
+
+        <NumberField
           source="price"
           formClassName={classes.firstInGroup}
-          // validate={required()}
-          disabled
+          style={{ fontSize: "18px" }}
         />
-        <NumberInput
-          autoFocus
+        <NumberField
           source="point"
           formClassName={classes.nextInGroup}
-          // validate={required()}
-          disabled
+          style={{ fontSize: "18px" }}
         />
-        <RadioButtonGroupInput
-          disabled
-          source="appType"
-          choices={[
-            { id: "Advisor", name: "Advisor" },
-            { id: "Customer", name: "Customer" },
-          ]}
-        />
+
+        <TextField source="appType" 
+        style={{ fontSize: "18px" }} />
       </SimpleForm>
     </Show>
   );

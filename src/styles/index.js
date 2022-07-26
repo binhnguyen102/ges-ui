@@ -4,7 +4,7 @@ export const styles = {
   three: { width: 830 },
   four: { width: 1120 },
   firstInGroup: { display: "inline-block" },
-  nextInGroup: { display: "inline-block", marginLeft: 32 },
+  nextInGroup: { display: "inline-block", marginLeft: 25 },
   nextInGroupcopy: { display: "inline-block", marginLeft: 200 },
   nextInGroup100: { display: "inline-block", marginLeft: 200 },
 };

@@ -9,7 +9,7 @@ module.exports = {
         clear_input_value: 'Clear value',
         clone: 'Clone',
         confirm: 'Confirm',
-        create: 'Create',
+        create: 'Tạo mới',
         delete: 'Delete',
         edit: 'Edit',
         export: 'Export',
@@ -42,8 +42,8 @@ module.exports = {
         loading: 'Loading',
         not_found: 'Not Found',
         show: '%{name} #%{id}',
-        empty: 'No %{name} yet.',
-        invite: 'Do you want to add one?',
+        empty: '%{name}.',
+        invite: 'Click vào để tạo mới?',
     },
     input: {
         file: {
@@ -92,7 +92,8 @@ module.exports = {
     },
     navigation: {
         skip_nav: "Skip navigation",
-        no_results: 'No results found',
+        // no_results: 'No results found',
+        no_results: 'không có kết quả nào được tìm thấy!',
         no_more_results:
             'The page number %{page} is out of boundaries. Try the previous page.',
         page_out_of_boundaries: 'Page number %{page} out of boundaries',
@@ -114,7 +115,8 @@ module.exports = {
     },
     notification: {
         updated: 'Element updated |||| %{smart_count} elements updated',
-        created: 'Element created',
+        // created: 'Element created',
+        created: 'Tạo thành công',
         deleted: 'Element deleted |||| %{smart_count} elements deleted',
         bad_item: 'Incorrect element',
         item_doesnt_exist: 'Element does not exist',
@@ -127,8 +129,9 @@ module.exports = {
         logged_out: 'Your session has ended, please reconnect.',
     },
     validation: {
-        required: 'Required',
-        minLength: 'Must be %{min} characters at least',
+        required: 'Bắt buộc nhập',
+        // minLength: 'Must be %{min} characters at least',
+        minLength: 'Cho phép nhập chữ và số, ít nhất 5 kí tự.',
         maxLength: 'Must be %{max} characters or less',
         minValue: 'Must be at least %{min}',
         maxValue: 'Must be %{max} or less',
@@ -136,6 +139,7 @@ module.exports = {
         email: 'Must be a valid email',
         oneOf: 'Must be one of: %{options}',
         regex: 'Must match a specific format (regexp): %{pattern}',
+        
     },
 },
 };

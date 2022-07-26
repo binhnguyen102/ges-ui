@@ -1,7 +1,6 @@
 import React from "react";
+import { Box, Chip } from "@mui/material";
 import {
-  Filter,
-  TextInput,
   List,
   Datagrid,
   TextField,
@@ -12,19 +11,16 @@ import {
   ShowButton,
   useRecordContext,
   EditButton,
+  Filter,
+  CreateButton,
 } from "react-admin";
+import { APP_TYPE, RATE_STATUS } from "./constant";
 
-const Filters = (props) => (
-  <Filter {...props}>
-    <TextInput label="Search" source="q" alwaysOn />
-  </Filter>
-);
-const StatusField = () => {
+const ActionFiled = () => {
   const record = useRecordContext();
- 
   return (
     <span>
-      {record.status === "Draft" ? (
+      {record.status === "df33630b-70fd-4883-9af0-1322b30fea9c" ? (
         <EditButton record={record} label={null} />
       ) : (
         <ShowButton record={record} label={null} />
@@ -33,50 +29,94 @@ const StatusField = () => {
   );
 };
 
-const BinField = () => {
+const StatusField = () => {
   const record = useRecordContext();
-
-  return (
-  <span>{record.status === "Draft" ? "Draft" : "Use"&&"Used"}</span>
-  );
+  if (record.status === RATE_STATUS[0].id) {
+    return <Chip label={RATE_STATUS[0].name} color="default" />
+  } else if (record.status === RATE_STATUS[2].id) {
+    return <Chip label={RATE_STATUS[2].name} color="info" />
+  } else {
+    return <Chip label={RATE_STATUS[1].name} color="success" />
+  }
 };
-const postFilters = [
-  <SelectInput
-    source="appType" label = "Đối tượng áp dụng"
-    value="All"
-    style={{width: "200px"}}
-    alwaysOn
-    choices={[
-      { id: "Customer", name: "Customer" },
-      { id: "Agent", name: "Agent" },
-    ]}
-  />,
-  <SelectInput
-    source="status" label = "Trạng thái"
-    value="All"
-    alwaysOn
-    choices={[
-      { id: "Draft", name: "Draft" },
-      { id: "Use", name: "Use" },
-      { id: "Used", name: "Used" },
-    ]}
-  />,
-];
-const RateList = (props) => (
-  <List {...props} filters={postFilters}>
-    <Datagrid>
-      <DateField showTime source="createdAt" textAlign="center" label="Ngày tạo"/>
-      <DateField showTime source="startDate" textAlign="center" label="Ngày áp dụng" />
-      <DateField showTime source="endDate" textAlign="center" label="Ngày kết thúc"/>
-      <TextField source="name" textAlign="center" label="Tên tỉ lệ " />
-      <NumberField source="price" textAlign="center" label="Mệnh giá (VND)"/>
-      <NumberField source="point" textAlign="center" label="Điểm Quy đổi"/>
-      <TextField source="appType" textAlign="center" label="Đối tượng áp dụng"/>
-      <BinField source="status" textAlign="center" label="Trạng Thái" />
-      {/* <TextField source="status" textAlign="center" label="Trạng Thái"/> */}
-      <StatusField textAlign="center" llabel="Hành động" />
 
-      {/* <ShowButton /> */}
+const RateFilter = (props) => {
+  return <Filter {...props}>
+    <SelectInput
+      variant="outlined"
+      source="appType"
+      style={{ width: "200px" }}
+      alwaysOn
+      choices={APP_TYPE}
+    />
+    <SelectInput
+      variant="outlined"
+      source="status"
+      alwaysOn
+      choices={RATE_STATUS}
+    />
+  </Filter>;
+}
+
+const RateAction = (props) => {
+  return <Box m={2}>
+    <CreateButton label="Tạo mới" />
+  </Box>
+}
+
+const RateList = (props) => (
+  <List
+    {...props}
+    filters={<RateFilter />}
+    actions={<RateAction />}
+    bulkActionButtons={false}
+    exporter={false}
+    title="resources.gm/admin/rates.titles.list"
+  >
+    <Datagrid>
+      <DateField
+        showTime
+        source="createdAt"
+        textAlign="center"
+        emptyText="-"
+      />
+      <DateField
+        showTime
+        source="startDate"
+        textAlign="center"
+        emptyText="-"
+      />
+      <DateField
+        showTime
+        source="endDate"
+        textAlign="center"
+        emptyText="-"
+      />
+      <TextField source="name" emptyText="-" />
+      <NumberField
+        source="price"
+        textAlign="center"
+        emptyText="-"
+      />
+      <NumberField
+        source="point"
+        textAlign="center"
+        emptyText="-"
+      />
+      <ChipField
+        source="appType"
+        textAlign="center"
+        emptyText="-"
+      />
+      <StatusField
+        source="status"
+        textAlign="center"
+        emptyText="-"
+      />
+      <ActionFiled
+        textAlign="center"
+        label="resources.gm/admin/rates.fields.action"
+      />
     </Datagrid>
   </List>
 );

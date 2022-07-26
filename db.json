@@ -1,54 +1,54 @@
 {
-  "getGifts": [
+  "gifts": [
     {
       "id": "1",
-      "name": "qua 1",
-      "supplier": "cong ty 1",
-      "price": 100000,
-      "image": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "classify": "Education",
-      "total": "11876",
+      "providerGiftTitle": "qua 1",
+      "provider": "cong ty 1",
+      "providerGiftPrice": 100000,
+      "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
+      "providerGiftCodeDisplayType": "Education",
+      "providerGiftQuantity": "11876",
       "application": "Agent"
     },
     {
       "id": "2",
-      "name": "download.png",
-      "supplier": "cong ty 1",
-      "price": 100000,
-      "image": "https://ds393qgzrxwzn.cloudfront.net/resize/m600x500/cat1/img/images/0/RWe4wZV9VI.jpg",
-      "classify": "Education",
-      "total": "11876",
+      "providerGiftTitle": "banh 1",
+      "provider": "cong ty 1",
+      "providerGiftPrice": 100000,
+      "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
+      "providerGiftCodeDisplayType": "Education",
+      "providerGiftQuantity": "11876",
       "application": "Agent"
     },
     {
       "id": "3",
-      "name": "download.png",
-      "supplier": "Company one ",
-      "price": 100000,
-      "image": "https://cdn.tgdd.vn/Files/2021/07/11/1367323/20-qua-cuoi-tang-co-dau-chu-re-y-nghia-doc-dao-t-1.jpg",
-      "classify": "Health",
-      "total": "11876",
-      "application": "Customer"
+      "providerGiftTitle": "xe 1",
+      "provider": "cong ty 1",
+      "providerGiftPrice": 100000,
+      "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
+      "providerGiftCodeDisplayType": "Education",
+      "providerGiftQuantity": "11876",
+      "application": "Agent"
     },
     {
       "id": "4",
-      "name": "download.png",
-      "supplier": "Company two",
-      "price": 100000,
-      "image": "https://phongduy.com/wp-content/uploads/2020/09/qua-sinh-nhat-cho-vo.jpg",
-      "classify": "Health",
-      "total": "11876",
-      "application": "Customer"
+      "providerGiftTitle": "du lich",
+      "provider": "cong ty 1",
+      "providerGiftPrice": 100000,
+      "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
+      "providerGiftCodeDisplayType": "Education",
+      "providerGiftQuantity": "11876",
+      "application": "Agent"
     },
     {
       "id": "5",
-      "name": "download.png",
-      "supplier": "Company two",
-      "price": 100000,
-      "image": "https://vietinbankgold.vn/upload_images/images/tang%20qua.jpg",
-      "classify": "Service",
-      "total": "11876",
-      "application": "Customer"
+      "providerGiftTitle": "hello",
+      "provider": "cong ty 1",
+      "providerGiftPrice": 100000,
+      "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
+      "providerGiftCodeDisplayType": "Education",
+      "providerGiftQuantity": "11876",
+      "application": "Agent"
     }
   ],
   "history": [
@@ -161,7 +161,7 @@
       "createdAt": "2022-07-05T08:59:00.000Z",
       "startDate": "2022-07-05T08:59:00.000Z",
       "endDate": "2022-07-05T08:59:00.000Z",
-      "name": "download.png",
+      "name": "do",
       "price": 12,
       "point": 3,
       "appType": "Advisor",
@@ -198,17 +198,6 @@
       "price": "10000",
       "point": "5",
       "appType": "Customer",
-      "status": "Use"
-    },
-    {
-      "id": "5",
-      "createdAt": "2022-07-05T08:59:00.000Z",
-      "startDate": "2022-07-05T08:59:00.000Z",
-      "endDate": "2022-07-05T08:59:00.000Z",
-      "name": "download.png",
-      "price": "10000",
-      "point": "6",
-      "appType": "Agent",
       "status": "Use"
     }
   ]
