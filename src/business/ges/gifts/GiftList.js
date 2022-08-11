@@ -1,4 +1,5 @@
 import React, { Fragment, useEffect, useState } from "react";
+// import FavoriteIcon from '@mui/icons-material/Favorite';
 import {
   List,
   Datagrid,
@@ -111,7 +112,7 @@ const UpdateButton = ({ ...props }) => {
               gifts: props?.selectedIds,
               appTypes: values?.appTypes,
             },
-          },
+       },
         },
       })
       .then(() => {})
@@ -158,6 +159,7 @@ const UpdateButton = ({ ...props }) => {
                       defaultValue={false}
                       source="activated"
                       label="Kích hoạt"
+                      // options={{ checkedIcon: <FavoriteIcon /> }}
                     />
                   </div>
                   <DialogActions>
@@ -251,7 +253,7 @@ const GiftList = (props) => {
         />
         <FunctionField
           emptyText="-"
-          source="giftApply"
+          source="giftApply" 
           render={(record) => {
             return <GiftShowApplication data={record.giftApply} />;
           }}

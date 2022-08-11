@@ -7,8 +7,7 @@ import { useTranslate, MenuItemLink } from 'react-admin';
 // ICON
 import CardGiftCardIcon from '@material-ui/icons/CardGiftcard';
 import ListIcon from '@material-ui/icons/List';
-
-
+import AppSettingsAltIcon from '@mui/icons-material/AppSettingsAlt';
 const Menu = ({ onMenuClick, dense, logout }) => {
     // const { permissions } = usePermissions();
 
@@ -48,6 +47,16 @@ const Menu = ({ onMenuClick, dense, logout }) => {
                     smart_count: 2,
                 })}
                 leftIcon={<CardGiftCardIcon />}
+                onClick={onMenuClick}
+                sidebarIsOpen={open}
+                dense={dense}
+            />
+                <MenuItemLink
+                to={`/gm/admin/transaction`}
+                primaryText={translate(`pos.menu.admin.ges.children.transaction`, {
+                    smart_count: 2,
+                })}
+                leftIcon={<AppSettingsAltIcon />}
                 onClick={onMenuClick}
                 sidebarIsOpen={open}
                 dense={dense}

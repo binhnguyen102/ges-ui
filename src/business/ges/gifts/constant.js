@@ -9,7 +9,7 @@ export const PROVIDER_GRIFT_CODE_DISPLY_TYPE = [
   { id: "111", name: "Nhà hàng" },
   { id: "135", name: "Siêu thị" },
   { id: "16", name: "Làm Đẹp - Sức Khoẻ" },
-  { id: "132", name: "Hoa - Quả - Thực phẩm sạch" },
+  { id: "132", name: "Hoa - Quả - Thực pẩhm sạch" },
   { id: "141", name: "Du lịch - Giải Trí    " },
   { id: "122", name: "Cafe - Thức uống" },
   { id: "163", name: "Gym - Fitness" },

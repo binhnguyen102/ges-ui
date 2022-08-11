@@ -88,7 +88,7 @@ module.exports = {
             'Either you typed a wrong URL, or you followed a bad link.',
         yes: 'Yes',
         unsaved_changes:
-            "Some of your changes weren't saved. Are you sure you want to ignore them?",
+            "Một số thay đổi của bạn chưa được lưu. Bạn có chắc chắn muốn bỏ qua chúng không?",
     },
     navigation: {
         skip_nav: "Skip navigation",
@@ -114,7 +114,7 @@ module.exports = {
         logout: 'Logout',
     },
     notification: {
-        updated: 'Element updated |||| %{smart_count} elements updated',
+        updated: 'Cập nhật thành công |||| %{smart_count} elements updated',
         // created: 'Element created',
         created: 'Tạo thành công',
         deleted: 'Element deleted |||| %{smart_count} elements deleted',

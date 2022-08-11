@@ -5,7 +5,7 @@ const REST_SERVER_URI = process.env.REACT_APP_REST_SERVER_URI || "http://192.168
 // const REST_SERVER_URI = process.env.REACT_APP_REST_SERVER_URI || "http://localhost:6969";
 
 
-const httpClient = (url, options = {}) => {
+const httpClient = (url, options = {}) => { 
   if (!options.headers) {
     options.headers = new Headers({ Accept: 'application/json' });
   }
@@ -14,7 +14,7 @@ const httpClient = (url, options = {}) => {
   options.headers.set('timezone', timezone);
   options.headers.set('lang', localStorage.getItem('lang'));
   options.headers.set('X-Tier-Type', localStorage.getItem('xTierType'));
-  options.headers.set('X-User-Type', localStorage.getItem('xUserType'));
+  options.headers.set('X-User-Type', localStorage.getItem('xUserType'));  
   options.headers.set('dataTag', localStorage.getItem('dataTag') || "data-of-user");
   return fetchUtils.fetchJson(url, options);
 };

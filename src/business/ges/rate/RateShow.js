@@ -26,7 +26,7 @@ const RateShow = (props) => {
         <NumberField
           source="point"
           formClassName={classes.nextInGroup}
-          style={{ fontSize: "18px" }}
+          style={{ fontSize: "18px" }}  
         />
 
         <TextField source="appType" 

@@ -147,7 +147,7 @@ const ToobarCreateRate = (props) => {
   );
 };
 const RateEdit = (props) => {
-  console.log(props);
+  console.log( props);
   const classes = useStyles();
 
   return (

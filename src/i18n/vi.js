@@ -19,6 +19,7 @@ export default {
             gift: "Danh sách quà",
             history: "Lịch sử giao dịch",
             rate: "Quy đổi quà",
+            transaction: "Hiển thị giao dịch"
           }
         },
       }
@@ -67,6 +68,55 @@ export default {
         catName: 'Phân loại',
         show: 'Hành động',
         action: "Hành động"
+        
+      }
+
+    }, 
+    "gm/admin/transaction": {
+      name: "Thiết lập ứng dụng giao dịch",
+      titles: {
+        show: "Chi tiết ứng dụng giao dịch",
+        list: "Danh sách ứng dụng giao dịch"
+      },
+      fields: {
+        q: "Tìm kiếm",
+        // id: 'Mã ứng dụng hiển thị',
+        id: 'ID',
+        appType:'Đối tượng áp dụng',
+        totalPrice: "Mệnh giá (VND)",
+        totalPoint: "Điểm quy đổi",
+        providerTotalPaid: 'Nhà cung cấp Tổng số tiền đã trả',
+        providerGiftCatTitle: "Tên quà",
+        providerCodeExpire: "Mã nhà cung cấp Hết hạn",
+        provider: "Nhà cung cấp",
+        providerGiftPrice: "Mệnh giá (VND)",
+        providerGiftImage: "Hình ảnh",
+        clientTransactionId: "giao dịch khách hàng",
+        providerGiftQuantity: "Tổng số quà",
+        giftApply: "Ứng dụng hiển thị",
+        catId: 'Phân loại',
+        catName: 'Phân loại',
+        status: "trạng thái",
+        createdBy: "Được tạo bởi",
+        show: 'Hành động',
+        action: "Hành động",
+        updatedAt: "Cập nhật tại",
+        updatedBy: "Cập nhật ",
+        createdAt: "Được tao bởi",
+        createdBy: "Được tạo",
+        tags: "tags",
+        // providerGiftId: "ID nhà cung cấp quà tặng",
+        providerCodeImage:"Mã hình ảnh nhà cung cấp",
+        providerTransactionDetailId: "Id Chi tiết Giao dịch của nhà cung cấp",
+        providerTotalPaid: "Tổng số tiền nhà cung cấp đã trả",
+        billingTransactionId: "ID giao dịch thanh toán",
+        balance:"Số dư",
+        giftInfo:"Tên món quà",
+        providerCode: "Mã nhà cung cấp",
+        providerGiftId: "ID quà tặng của nhà cung cấp",
+        billingBalance: "Số dư thanh toán",
+        providerToken: "provider Token"
+
         
       }
 

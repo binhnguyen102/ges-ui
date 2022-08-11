@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Box, Button } from "@mui/material";
 import { APP_TYPE } from "./constant";
 
-const validateFirstName = [required(), minLength(5), maxLength(100)];
+// const validateFirstName = [required(), minLength(5), maxLength(100)];
 const useStyles = makeStyles(styles);
 const ToobarCreateRate = (props) => {
   return (
@@ -35,19 +35,31 @@ const ToobarCreateRate = (props) => {
 const RateCreate = (props) => {
   const classes = useStyles();
 
+
+  const validateUserCreation = (values) => {
+    const errors = {};
+    if (!values.name) {
+        errors.name = 'The name is required';
+    }
+    return errors
+};
+
+
   return (
     <Create
+    
       {...props}
       path="rates"
       title="resources.gm/admin/rates.titles.create"
       redirect="list"
     >
-      <SimpleForm toolbar={<ToobarCreateRate />}  redirect="list">
+      <SimpleForm toolbar={<ToobarCreateRate />} warnWhenUnsavedChanges    redirect="list">
         <TextInput style={{ marginLeft: 10 }}
           variant="outlined"
           source="name"
           className={classes.two}
-          validate={validateFirstName}
+          validate={required()}
+          // validate={validateFirstName}
         />
         <NumberInput style={{ marginLeft: 10 }}
           variant="outlined"

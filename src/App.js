@@ -13,6 +13,7 @@ import { Layout } from "./layout";
 import rates from "./business/ges/rate";
 // import history from "./business/ges/history";
 import gifts from "./business/ges/gifts";
+import transaction from "./business/ges/transaction";
 // Multi Language
 const i18nProvider = polyglotI18nProvider((locale) => {
   if (locale === "en") {
@@ -57,7 +58,8 @@ const App = () => {
     >
       <Resource key="ges-gifts" name="gm/admin/gifts" {...gifts} />
       <Resource key="ges-rate" name="gm/admin/rates" {...rates} />
-    </Admin>
+      <Resource key="ges-transaction" name="gm/admin/transaction" {...transaction} />
+    </Admin>  
   );
 };
 export default App;

@@ -8,4 +8,4 @@ export default {
   create: RateCreate,
   edit: RateEdit,
   show: RateShow
-};
+}; 

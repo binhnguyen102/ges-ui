@@ -1,54 +1,58 @@
 {
-  "gifts": [
+  "gift": [
     {
       "id": "1",
       "providerGiftTitle": "qua 1",
       "provider": "cong ty 1",
       "providerGiftPrice": 100000,
       "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "providerGiftCodeDisplayType": "Education",
+      "catName": "Sức Khỏe",
       "providerGiftQuantity": "11876",
-      "application": "Agent"
+      "giftApply": ""
+      
     },
     {
       "id": "2",
-      "providerGiftTitle": "banh 1",
+      "providerGiftTitle": "qua 1",
       "provider": "cong ty 1",
       "providerGiftPrice": 100000,
       "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "providerGiftCodeDisplayType": "Education",
+      "catName": "Sức Khỏe",
       "providerGiftQuantity": "11876",
-      "application": "Agent"
+      "giftApply": ""
+      
     },
     {
       "id": "3",
-      "providerGiftTitle": "xe 1",
+      "providerGiftTitle": "qua 1",
       "provider": "cong ty 1",
       "providerGiftPrice": 100000,
       "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "providerGiftCodeDisplayType": "Education",
+      "catName": "Sức Khỏe",
       "providerGiftQuantity": "11876",
-      "application": "Agent"
+      "giftApply": ""
+      
     },
     {
-      "id": "4",
-      "providerGiftTitle": "du lich",
+      "providerGiftTitle": "qua 1",
       "provider": "cong ty 1",
       "providerGiftPrice": 100000,
       "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "providerGiftCodeDisplayType": "Education",
+      "catName": "Sức Khỏe",
       "providerGiftQuantity": "11876",
-      "application": "Agent"
+      "giftApply": ""
+      
     },
     {
       "id": "5",
-      "providerGiftTitle": "hello",
+      "providerGiftTitle": "qua 1",
       "provider": "cong ty 1",
       "providerGiftPrice": 100000,
       "providerGiftImage": "https://hoanggiagift.com/wp-content/uploads/2018/05/qua-tang-cho-nhan-vien-tai-hai-phong.jpg",
-      "providerGiftCodeDisplayType": "Education",
+      "catName": "Sức Khỏe",
       "providerGiftQuantity": "11876",
-      "application": "Agent"
+      "giftApply": ""
+      
     }
   ],
   "history": [
@@ -200,5 +204,53 @@
       "appType": "Customer",
       "status": "Use"
     }
+  ],
+  "transaction": [
+    {
+    "id": "4",
+    "createdAt": "2022-07-05T08:59:00.000Z",
+    "appType": "custommer",
+    "tongso": "24",
+    "thoigian": "2022-07-05T08:59:00.000Z",
+    "name": " BInh",
+    "kichhoat": " đã sử dụng"
+    },
+    {
+      "id": "422",
+      "createdAt": "2022-07-05T08:59:00.000Z",
+      "appType": "custommer",
+      "tongso": "24",
+      "thoigian": "2022-07-05T08:59:00.000Z",
+      "name": " Chị duyên mủm mĩm",
+      "kichhoat": " đã sử dụng"
+      },
+      {
+        "id": "423",
+        "createdAt": "2022-07-05T08:59:00.000Z",
+        "appType": "custommer",
+        "tongso": "24",
+        "thoigian": "2022-07-05T08:59:00.000Z",
+        "name": " Hồng nhăn nhún",
+        "kichhoat": " đã sử dụng"
+        },
+        {
+          "id": "42",
+          "createdAt": "2022-07-05T08:59:00.000Z",
+          "appType": "custommer",
+          "tongso": "24",
+          "thoigian": "2022-07-05T08:59:00.000Z",
+          "name": " LInh xấu xa",
+          "kichhoat": " đã sử dụng"
+          },
+          {
+            "id": "1",
+            "createdAt": "2022-07-05T08:59:00.000Z",
+            "appType": "custommer",
+            "tongso": "24",
+            "thoigian": "2022-07-05T08:59:00.000Z",
+            "name": " Bình Ngg",
+            "kichhoat": " đã sử dụng"
+            }
+
   ]
 }
